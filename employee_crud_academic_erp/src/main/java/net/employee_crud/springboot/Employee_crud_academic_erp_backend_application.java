@@ -9,9 +9,9 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 
 //@SpringBootApplication
-@SpringBootApplication(exclude = SecurityAutoConfiguration.class)
+@SpringBootApplication(exclude = SecurityAutoConfiguration.class) //ye disable automatic security configuration karta hai
 @EnableJpaRepositories(basePackages = "net.employee_crud.springboot.repository")
-@EntityScan(basePackages = "net.employee_crud.springboot.model")
+@EntityScan(basePackages = "net.employee_crud.springboot.model")// ye scan karta hai specified package for JPA entity classes.
 @EnableJpaAuditing
 public class Employee_crud_academic_erp_backend_application {
 
